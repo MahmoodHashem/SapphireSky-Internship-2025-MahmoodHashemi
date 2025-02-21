@@ -2,6 +2,8 @@
 
 ## Repository Structure
 
+```
+
 SapphireSky-Internship-2025-MahmoodHashemi/
 ├─ 01-programming-basics/
 │  ├─ arrays/
@@ -83,6 +85,8 @@ SapphireSky-Internship-2025-MahmoodHashemi/
 │        ├─ 4_season.js
 │        └─ 5_rockPaperScissors.js
 └─ index.html
+
+```
 
 # Programming Basics (First 2 Weeks)
 
