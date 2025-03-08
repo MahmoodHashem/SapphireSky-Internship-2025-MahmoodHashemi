@@ -1,12 +1,16 @@
+function isEquale(arr1, arr2) {
+  const sum1 = sumArray(arr1);
+  const sum2 = sumArray(arr2);
 
-
-
-function isEquale(arr1, arr2){
-
-
-    const sum1 = arr1.reduce((a, b) => a + b, 0)
-    const sum2 = arr2.reduce((a, b) => a + b, 0)
-
-    return sum1 === sum2
-
+  return sum1 === sum2;
 }
+
+function sumArray(arr) {
+  let total = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+}
+
