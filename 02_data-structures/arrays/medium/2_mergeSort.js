@@ -1,15 +1,4 @@
 
-
-
-// simplest way with built-in functions 😀
-function merge(arr1, arr2){
-   return [...arr1, ...arr2].sort() 
-}
-
-
-// The hard way with Algorithm 
-
-
 function merge(arr1, arr2){
     
     let result = []
@@ -38,7 +27,4 @@ function merge(arr1, arr2){
 
     return result
 }
-
-
-console.log(merge([1, 10, 50], [2, 14, 99, 100]))
 
