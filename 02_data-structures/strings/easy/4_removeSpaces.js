@@ -1,4 +1,9 @@
-
 function removeSpaces(str) {
-    return str.replace(/\s+/g, '');
+  let removedSpaces = "";
+
+  for (const char of str) {
+    removedSpaces += char !== " " ? char : "";
+  }
+
+  return removedSpaces; 
 }
