@@ -12,7 +12,7 @@ function removeDuplicate(arr) {
   return newArr;
 }
 
-function sort(arr) {
+export default function sort(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {
@@ -29,7 +29,7 @@ function sort(arr) {
 function runTests() {
   // Test 1: Numbers with duplicates
   const test1 = [1, 1, 2, 2, 3, 3, 4, 4];
-  console.log('Test 1:', JSON.stringify(removeDuplicate(test1)) === JSON.stringify([1, 2, 3, 4]) ? 'PASS' : 'FAIL');
+  console.log('Test 1a:', JSON.stringify(removeDuplicate(test1)) === JSON.stringify([1, 2, 3, 4]) ? 'PASS' : 'FAIL');
 
   // Test 2: Array already without duplicates
   const test2 = [1, 2, 3, 4, 5];
@@ -48,4 +48,3 @@ function runTests() {
   console.log('Test 5:', JSON.stringify(removeDuplicate(test5)) === JSON.stringify([42]) ? 'PASS' : 'FAIL');
 }
 
-runTests();
