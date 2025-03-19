@@ -1,6 +1,6 @@
 class Node {
   constructor(value) {
-    this.value = value;
+    this.val = value;
     this.next = null;
   }
 }
@@ -22,27 +22,27 @@ class LinkedList {
   }
 }
 
-function addTwoNumbers(l1, l2) {
-  let dummy = new ListNode();
+function addTwoNumbers(head1, head2) {
+  let dummy = new Node();
   let res = dummy;
   let total = 0,
     carry = 0;
 
-  while (l1 || l2 || carry) {
+  while (head1 || head2 || carry) {
     total = carry;
 
-    if (l1) {
-      total += l1.val;
-      l1 = l1.next;
+    if (head1) {
+      total += head1.val;
+      head1 = head1.next;
     }
-    if (l2) {
-      total += l2.val;
-      l2 = l2.next;
+    if (head2) {
+      total += head2.val;
+      head2 = head2.next;
     }
 
     let num = total % 10;
     carry = Math.floor(total / 10);
-    dummy.next = new ListNode(num);
+    dummy.next = new Node(num);
     dummy = dummy.next;
   }
 
@@ -58,9 +58,11 @@ function runTests() {
   const l1Test1 = createLinkedList([2, 4, 3]); // Represents 342
   const l2Test1 = createLinkedList([5, 6, 4]); // Represents 465
   const resultTest1 = addTwoNumbers(l1Test1, l2Test1);
-  console.log(
+  console.log(printList(resultTest1)); // Should be 807
+   console.log(
     "Test 1:",
     verifyListValues(resultTest1, [7, 0, 8]) ? "PASS" : "FAIL"
+
   ); // Should be 807
 
   // Test 2: Different length lists
@@ -105,13 +107,11 @@ function runTests() {
 function createLinkedList(values) {
   if (!values || values.length === 0) return null;
 
-  // Note: The function uses ListNode class, but the provided code uses Node class
-  // Adjust accordingly based on the actual implementation
-  const head = new ListNode(values[0]);
+  const head = new Node(values[0]);
   let current = head;
 
   for (let i = 1; i < values.length; i++) {
-    current.next = new ListNode(values[i]);
+    current.next = new Node(values[i]);
     current = current.next;
   }
 
@@ -145,7 +145,6 @@ function printList(head) {
   }
   return values.join(" -> ");
 }
-
 
 // Run the tests
 runTests();
