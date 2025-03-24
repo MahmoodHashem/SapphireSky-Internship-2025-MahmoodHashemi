@@ -1,20 +1,17 @@
 function postFixCalc(expression) {
-    //create new stack
+  
     let stack = []; 
-    
-    //loop through each character in provided expression
+
     for (let i = 0; i < expression.length; i++) {
-        //store each character
+        
         let token = expression[i];
 
-        //if it's a number, push to stack
-        //else pop right side and left side, perform operation and push to stack
         if (!isNaN(token)) {
             stack.push(Number(token));
         } else {
             let num1 = stack.pop();
             let num2 = stack.pop();
-            //if right or left side is not available
+         
             if (num2 === "UnderFlow" || num1 === "UnderFlow" ) {
                 return "Can't perform postfix calculation";
             }
@@ -38,7 +35,7 @@ function postFixCalc(expression) {
         }
 
     };
-   //return result of calculation
+  
     return stack.pop();
 }
 
