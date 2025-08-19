@@ -1,587 +1,244 @@
+# Internship Program - Skyteamsrogramming Basics
 
-# Internship Program - Sappire Sky
+**Programming Basics, Algorithms & Data Structures**
 
+This repository includes all the practice problems, solutions and notes I worked on throughout the month in my internship program in Skyteams - (Feb - 2025)
 
-# Programming Basics (First 2 Weeks)
+### JavaScript Fundamentals
 
-## Repository Structure
+| #   | Problem name                                                                                                                                                                    | Solution                                                                                                                                                         |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 001 | [var, let, const differences](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/01__var-let-const.js)       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/01__var-let-const.js)      |
+| 002 | [Even or odd check](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/02__evenOrOdd.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/02__evenOrOdd.js)          |
+| 003 | [== vs === comparison](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/03__equality.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/03__equality.js)           |
+| 004 | [Positive/negative/zero check](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/04__positiveOrNegative.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/04__positiveOrNegative.js) |
+| 005 | [JavaScript closures](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/05__closures.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/05__closures.js)           |
+| 006 | [Factorial calculation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/06__factorial.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/06__factorial.js)          |
+| 007 | [this keyword usage](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/07__this.js)                         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/07__this.js)               |
+| 008 | [JavaScript hoisting](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/08__hoisting.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/08__hoisting.js)           |
+| 009 | [Array sum calculation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/09__sumArray.js)                  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/09__sumArray.js)           |
+| 010 | [Arrow functions vs regular](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/10__arrowFunctions.js)       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/fundementals/10__arrowFunctions.js)     |
 
-```
+### If Conditions – Practical Exercises
 
-SapphireSky-Internship-2025-MahmoodHashemi/
-├─ 01-programming-basics/
-│  ├─ arrays/
-│  │  └─ easy/
-│  ├─ conditionals/
-│  │  ├─ easy/
-│  │  │  ├─ evenOrOdd.js
-│  │  │  ├─ leapYear.js
-│  │  │  ├─ minimum.js
-│  │  │  └─ score.js
-│  │  ├─ hard/
-│  │  │  ├─ billCalculator.js
-│  │  │  ├─ bmi.js
-│  │  │  └─ passStrengthChecker.js
-│  │  └─ medium/
-│  │     ├─ isTriangle.js
-│  │     ├─ speedLimit.js
-│  │     └─ withdraw.js
-│  ├─ functions/
-│  │  ├─ easy/
-│  │  │  ├─ 1_cToF.js
-│  │  │  ├─ 2_max.js
-│  │  │  ├─ 3_evenOrOdd.js
-│  │  │  ├─ 4_countVowels.js
-│  │  │  └─ 5_reverse.js
-│  │  ├─ hard/
-│  │  │  ├─ 1_pascalTriangle.js
-│  │  │  ├─ 2_binSearch.js
-│  │  │  ├─ 3_toBinary.js
-│  │  │  ├─ 4_bubbleSort.js
-│  │  │  └─ 5_uniqueArr.js
-│  │  └─ medium/
-│  │     ├─ 1_isPrime.js
-│  │     ├─ 2_factorial.js
-│  │     ├─ 3_gcd.js
-│  │     ├─ 4_fib.js
-│  │     └─ 5_isPalindrome.js
-│  ├─ fundementals/
-│  │  ├─ 01__var-let-const.js
-│  │  ├─ 02__evenOrOdd.js
-│  │  ├─ 03__equality.js
-│  │  ├─ 04__positiveOrNegative.js
-│  │  ├─ 05__closures.js
-│  │  ├─ 06__factorial.js
-│  │  ├─ 07__this.js
-│  │  ├─ 08__hoisting.js
-│  │  ├─ 09__sumArray.js
-│  │  └─ 10__arrowFunctions.js
-│  ├─ loops/
-│  │  ├─ easy/
-│  │  │  ├─ countDigits.js
-│  │  │  ├─ multiplicationTable.js
-│  │  │  ├─ numbers.js
-│  │  │  ├─ reverseNumber.js
-│  │  │  └─ sum.js
-│  │  ├─ hard/
-│  │  │  ├─ armstrongNumber.js
-│  │  │  ├─ collatzNumber.js
-│  │  │  ├─ gcd.js
-│  │  │  ├─ numGuess.js
-│  │  │  └─ pyramidPattern.js
-│  │  └─ medium/
-│  │     ├─ factorial.js
-│  │     ├─ fibonacci.js
-│  │     ├─ isPrime.js
-│  │     ├─ maxmin.js
-│  │     └─ palindrome.js
-│  └─ switch-cases/
-│     ├─ easy/
-│     │  ├─ 1_weekDay.js
-│     │  ├─ 2_caculator.js
-│     │  ├─ 3_trafficLight.js
-│     │  ├─ 4_monthName.js
-│     │  └─ 5_letterChecker.js
-│     └─ medium/
-│        ├─ 1_grade.js
-│        ├─ 2_currencyConverter.js
-│        ├─ 3_atm.js
-│        ├─ 4_season.js
-│        └─ 5_rockPaperScissors.js
-└─ index.html
+| #   | Problem name                                                                                                                                                                   | Solution                                                                                                                                                           |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 011 | [Check Odd or Even](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/evenOrOdd.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/evenOrOdd.js)           |
+| 012 | [Grade Calculator](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/score.js)                        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/score.js)               |
+| 013 | [Minimum of Two Numbers](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/minimum.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/minimum.js)             |
+| 014 | [Leap Year Checker](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/leapYear.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/easy/leapYear.js)            |
+| 015 | [Triangle Validity](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/isTriangle.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/isTriangle.js)        |
+| 016 | [Speeding Ticket Calculator](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/speedLimit.js)       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/speedLimit.js)        |
+| 017 | [ATM Withdrawal](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/withdraw.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/medium/withdraw.js)          |
+| 018 | [Body Mass Index (BMI) Calculator](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/bmi.js)          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/bmi.js)                 |
+| 019 | [Electricity Bill Calculator](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/billCalculator.js)    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/billCalculator.js)      |
+| 020 | [Password Strength Checker](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/passStrengthChecker.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/conditionals/hard/passStrengthChecker.js) |
 
-```
+### Loops – Practical Exercises
 
-# Programming Basics (First 2 Weeks)
+| #   | Problem name                                                                                                                                                           | Solution                                                                                                                                                    |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 021 | [Print Numbers from 1 to 100](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/numbers.js)          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/numbers.js)             |
+| 022 | [Sum of First N Natural Numbers](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/sum.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/sum.js)                 |
+| 023 | [Multiplication Table](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/multiplicationTable.js)     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/multiplicationTable.js) |
+| 024 | [Reverse a Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/reverseNumber.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/reverseNumber.js)       |
+| 025 | [Count Digits in a Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/countDigits.js)         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/easy/countDigits.js)         |
+| 026 | [Check for Prime Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/isPrime.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/isPrime.js)           |
+| 027 | [Factorial of a Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/factorial.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/factorial.js)         |
+| 028 | [Find Largest and Smallest in a List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/maxmin.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/maxmin.js)            |
+| 029 | [Fibonacci Sequence](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/fibonacci.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/fibonacci.js)         |
+| 030 | [Palindrome Checker](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/palindrome.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/medium/palindrome.js)        |
+| 031 | [Armstrong Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/armstrongNumber.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/armstrongNumber.js)     |
+| 032 | [Collatz Sequence](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/collatzNumber.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/collatzNumber.js)       |
+| 033 | [Find GCD](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/gcd.js)                                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/gcd.js)                 |
+| 034 | [Pattern Printing - Pyramid](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/pyramidPattern.js)    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/pyramidPattern.js)      |
+| 035 | [Number Guessing Game](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/numGuess.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/loops/hard/numGuess.js)            |
 
-## JavaScript Fundamentals
+### Functions – Practical Exercises
 
-1. What is the difference between var, let, and const in JavaScript?
-2. Write a function to check if a number is even or odd.
-3. Explain the difference between == and === in JavaScript.
-4. Write a program that takes user input and prints whether it is a positive, negative, or zero.
-5. What are JavaScript closures? Provide an example.
-6. Write a function that calculates the factorial of a given number.
-7. How does this keyword work in JavaScript? Provide an example.
-8. Explain the concept of hoisting in JavaScript.
-9. Write a function to find the sum of all numbers in an array.
-10. What are arrow functions in JavaScript, and how are they different from regular functions?
+| #   | Problem name                                                                                                                                                                  | Solution                                                                                                                                                     |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 036 | [Convert Celsius to Fahrenheit](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/1_cToF.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/1_cToF.js)           |
+| 037 | [Find Maximum of Three Numbers](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/2_max.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/2_max.js)            |
+| 038 | [Check Even or Odd](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/3_evenOrOdd.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/3_evenOrOdd.js)      |
+| 039 | [Count Vowels in String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/4_countVowels.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/4_countVowels.js)    |
+| 040 | [Reverse a String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/5_reverse.js)                      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/easy/5_reverse.js)        |
+| 041 | [Check if Number is Prime](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/1_isPrime.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/1_isPrime.js)      |
+| 042 | [Factorial Using Recursion](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/2_factorial.js)         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/2_factorial.js)    |
+| 043 | [Find GCD of Two Numbers](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/3_gcd.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/3_gcd.js)          |
+| 044 | [Find nth Fibonacci Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/4_fib.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/4_fib.js)          |
+| 045 | [Check Palindrome String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/5_isPalindrome.js)        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/medium/5_isPalindrome.js) |
+| 046 | [Generate Pascal&#39;s Triangle](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/1_pascalTriangle.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/1_pascalTriangle.js) |
+| 047 | [Binary Search Algorithm](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/2_binSearch.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/2_binSearch.js)      |
+| 048 | [Decimal to Binary Conversion](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/3_toBinary.js)         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/3_toBinary.js)       |
+| 049 | [Bubble Sort Algorithm](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/4_bubbleSort.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/4_bubbleSort.js)     |
+| 050 | [Find Unique Elements](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/5_uniqueArr.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/functions/hard/5_uniqueArr.js)      |
 
-## 1. If Conditions – Practical Exercises
+### Switch-Case – Practical Exercises
 
-### Easy
-
-1. **Check Odd or Even**
-
-   * Write a program that takes a number as input and checks if it is odd or even.
-3. **Grade Calculator**
-
-   * Given a student's score (0-100), determine their letter grade based on the following scale:
-     * 90-100: A
-     * 80-89: B
-     * 70-79: C
-     * 60-69: D
-     * Below 60: F
-4. **Minimum of Two Numbers**
-
-   * Write a program that takes two numbers as input and prints the smaller number.
-5. **Leap Year Checker**
-
-   * A year is a leap year if it is divisible by 4 but not by 100, unless also divisible by 400. Write a program that determines if a given year is a leap year.
-
-### Medium
-
-5. **Triangle Validity**
-   Given three sides of a triangle, check if they form a valid triangle. The sum of any two sides must be greater than the third.
-6. **Speeding Ticket Calculator**
-7. **ATM Withdrawal**
-
-   1. A person wants to withdraw money from an ATM.
-      * If the withdrawal amount is a multiple of 10, allow withdrawal.
-      * If not, print an error message.
-      * If the account balance is less than the withdrawal amount, print "Insufficient Funds".
-
-### Hard
-
-8. **Body Mass Index (BMI) Calculator**
-9. **Electricity Bill Calculator**
-
-   * Units Consumed:
-   * Up to 100 units: $0.50 per unit
-   * 101 to 200 units: $0.75 per unit
-   * 201 to 500 units: $1.20 per unit
-   * Above 500 units: $1.50 per unit
-   * Write a program that calculates the total electricity bill.
-10. **Password Strength Checker**
-
-    * A strong password must:
-      * Be at least 8 characters long.
-      * Contain at least one uppercase letter, one lowercase letter, and one number.
-      * Write a program that checks if a given password is strong or weak.
-
-## 2. Loops – Practical Exercises
-
-### Easy
-
-1. **Print Numbers from 1 to 100**
-   Write a for loop that prints numbers from 1 to 100.
-2. **Sum of First N Natural Numbers**
-   Write a program that takes N as input and calculates the sum of the first N natural numbers.
-3. **Multiplication Table**
-   Ask the user for a number and print its multiplication table up to 10.
-4. **Reverse a Number**
-   Given an integer, reverse its digits. (Example: 1234 → 4321)
-5. **Count Digits in a Number:** Take a number as input and count how many digits it has.
-
-### Medium
-
-6. **Check for Prime Number**
-   Write a program that takes a number as input and checks if it is prime.
-7. **Factorial of a Number**
-   Implement a function that calculates the factorial of a number using a loop.
-8. **Find Largest and Smallest in a List**
-   Given an array of numbers, find the largest and smallest numbers using a loop.
-9. **Fibonacci Sequence**
-   Print the first N Fibonacci numbers using a loop.
-10. **Palindrome Checker:** Write a program that checks if a given number is a palindrome (Example: 121 → True, 123 → False).
-
-### Hard
-
-11. **Armstrong Number**
-    A number is an Armstrong number if the sum of its digits raised to the power of the number of digits equals the number itself.
-    Example: 153 = (1³ + 5³ + 3³) = 153
-    Write a program that checks if a given number is an Armstrong number.
-12. **Collatz Sequence (Hailstone Numbers)**
-
-* Take a number n.
-* If n is even, divide it by 2.
-* If n is odd, multiply it by 3 and add 1.
-* Repeat this process until n = 1.
-* Count how many steps it takes to reach 1.
-
-
-14. **Find GCD (Greatest Common Divisor)**
-
-    * Given two numbers, find their GCD using a loop.
-15. **Pattern Printing - Pyramid**
-    Write a program that prints this pattern for N = 5:
-
-    ```
-       *  
-      ***  
-     *****  
-    *******  
-
-    ```
-16. **Number Guessing Game**
-
-    * The program randomly selects a number between 1 and 100.
-      * The user must guess the number.
-      * The program gives hints like "Too High" or "Too Low".
-      * The loop continues until the user guesses correctly.
-
-## 3. Functions – Practical Exercises
-
-### Easy
-
-* **Convert Celsius to Fahrenheit**
-  Write a function celsiusToFahrenheit(celsius) that converts a temperature from Celsius to Fahrenheit using the formula: F=(C×95)+32F = (C \times \frac{9}{5}) + 32F=(C×59)+32
-* **Find the Maximum of Three Numbers**
-  Implement a function maxOfThree(a, b, c) that returns the largest of three numbers.
-* **Check Even or Odd**
-  Create a function isEven(number) that returns true if the number is even and false otherwise.
-* **Count Vowels in a String**
-  Write a function countVowels(str) that takes a string and returns the number of vowels in it.
-* **Reverse a String:** Implement reverseString(str), which takes a string and returns it reversed.
-  Example: "hello" → "olleh"
-
-### Medium
-
-* **Check if a Number is Prime**
-  Write a function isPrime(n) that returns true if n is a prime number and false otherwise.
-* **Calculate Factorial Using Recursion**
-  Implement factorial(n), which calculates the factorial of n using recursion.
-* **Find the GCD of Two Numbers**
-  Write a function gcd(a, b) that finds the Greatest Common Divisor (GCD) using the Euclidean algorithm.
-* **Find the nth Fibonacci Number**
-  Implement fibonacci(n), which returns the nth Fibonacci number.
-* **Check if a String is a Palindrome:** Write a function isPalindrome(str) that returns true if the given string is a palindrome. Example: "racecar" → true, "hello" → false
-
-### Hard
-
-11. **Generate Pascal’s Triangle**
-    Implement pascalTriangle(rows), which prints Pascal’s Triangle up to rows rows.
-12. **Binary Search Algorithm**
-    Write a function binarySearch(arr, target) that performs a binary search on a sorted array.
-13. **Convert Decimal to Binary**
-    Implement decimalToBinary(n), which converts a decimal number to its binary equivalent.
-14. **Sorting an Array Using Bubble Sort**
-    Write a function bubbleSort(arr) that sorts an array using the Bubble Sort algorithm.
-15. **Find Unique Elements in an Array**
-    Create findUnique(arr), which returns an array with only the unique elements from the input array.
-    Example: [1, 2, 2, 3, 4, 4, 5] → [1, 3, 5]
+| #   | Problem name                                                                                                                                                                              | Solution                                                                                                                                                             |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 051 | [Day of the Week](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/1_weekDay.js)                                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/1_weekDay.js)             |
+| 052 | [Simple Calculator](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/2_caculator.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/2_caculator.js)           |
+| 053 | [Traffic Light System](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/3_trafficLight.js)                      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/3_trafficLight.js)        |
+| 054 | [Month Name and Days](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/4_monthName.js)                          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/4_monthName.js)           |
+| 055 | [Check Vowel or Consonant](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/5_letterChecker.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/easy/5_letterChecker.js)       |
+| 056 | [Student Grade System](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/1_grade.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/1_grade.js)             |
+| 057 | [Currency Converter](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/2_currencyConverter.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/2_currencyConverter.js) |
+| 058 | [Menu-Based ATM System](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/3_atm.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/3_atm.js)               |
+| 059 | [Determine Season by Month](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/4_season.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/4_season.js)            |
+| 060 | [Rock, Paper, Scissors Game](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/5_rockPaperScissors.js)         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/medium/5_rockPaperScissors.js) |
+| 061 | [Roman Numeral Converter](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/1_romanNumeral.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/1_romanNumeral.js)        |
+| 062 | [Zodiac Sign Finder](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/2_zodaicSign.js)                          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/2_zodaicSign.js)          |
+| 063 | [Discount System Based on Membership](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/3_discountMembership.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/3_discountMembership.js)  |
+| 064 | [Automated Toll Booth System](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/4_tollBooth.js)                  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/4_tollBooth.js)           |
+| 065 | [Music Playlist Controller](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/5_musicController.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/01-programming-basics/switch-cases/hard/5_musicController.js)     |
 
 ---
 
-## 4. Switch-Case – Practical Exercises
-
-### Easy
-
-1. **Day of the Week**
-2. **Simple Calculator**
-
-   * Take two numbers and an operator (+, -, *, /).
-   * Use switch to perform the correct operation and return the result.
-3. **Traffic Light System**
-
-   * Take a traffic light color ("red", "yellow", "green") as input.
-   * Use switch to print the corresponding action:
-     * "Red" → "Stop"
-     * "Yellow" → "Slow Down"
-     * "Green" → "Go"
-4. **Month Name and Days**
-
-   * Input a number (1-12) representing a month.
-   * Use switch to print the name of the month and how many days it has.
-5. **Check for Vowel or Consonant**
-
-   * Take a letter as input.
-   * Use switch to determine whether it is a vowel or a consonant.
-
-### Medium
-
-6. **Student Grade System**
-
-   * Take a student's score (0-100).
-   * Use switch to assign a letter grade (A, B, C, D, F).
-7. **Currency Converter**
-
-   * Take a currency code ("USD", "EUR", "INR", "JPY").
-   * Use switch to print the conversion rate relative to a base currency (e.g., USD).
-8. **Menu-Based ATM System**
-
-   * Display a menu with options:
-     * 1 → Check Balance
-     * 2 → Withdraw Money
-     * 3 → Deposit Money
-     * 4 → Exit
-   * Use switch to perform the correct action based on the user’s choice.
-9. **Determine Season by Month**
-
-   * Take an integer (1-12) as input.
-   * Use switch to print the corresponding season:
-     * 12, 1, 2 → Winter
-     * 3, 4, 5 → Spring
-     * 6, 7, 8 → Summer
-     * 9, 10, 11 → Fall
-10. **Rock, Paper, Scissors Game**
-
-    * The user inputs "rock", "paper", or "scissors".
-    * The computer randomly selects one.
-    * Use switch to determine the winner.
-
-### Hard
-
-11. **Roman Numeral Converter**
-
-    * Take an integer (1-10) as input.
-    * Use switch to print the corresponding Roman numeral.
-12. **Zodiac Sign Finder**
-
-    * Take a birth month and day.
-    * Use switch to determine the person's zodiac sign.
-13. **Discount System Based on Membership**
-
-    * Input membership type ("Gold", "Silver", "Bronze").
-    * Use switch to apply different discount rates on a purchase.
-14. **Automated Toll Booth System**
-
-    * Take a vehicle type ("Car", "Truck", "Bike") as input.
-    * Use switch to determine the toll fee.
-15. **Music Playlist Controller**
-
-    * Take a command ("Play", "Pause", "Next", "Previous").
-    * Use switch to perform the correct action.
-
----
-
-## Bonus Challenge: Nested Loops
-
-1. Print Prime Numbers from 1 to 100
-   Use a loop inside another loop to check for prime numbers in a range.
-2. Pascal’s Triangle
-   Generate Pascal’s Triangle up to N rows.
-3. Matrix Multiplication
-   Given two matrices, multiply them using nested loops.
-
----
-
-2. Object-Oriented Programming (OOP)
-3. What are the four pillars of Object-Oriented Programming?
-4. Define and provide an example of encapsulation in JavaScript.
-5. How do JavaScript classes differ from traditional classes in languages like Java or C++?
-6. Write a class Car with properties brand, model, and a method displayInfo().
-7. Explain prototype-based inheritance in JavaScript.
-8. How do you create a private property in a JavaScript class?
-9. What is method overriding, and how can it be implemented in JavaScript?
-10. Write an example demonstrating polymorphism in JavaScript.
-11. What is the purpose of super() in JavaScript classes?
-12. Explain the difference between composition and inheritance.
-
----
-
-3. Debugging
-4. What are the different types of errors in JavaScript?
-5. How can you debug a JavaScript program in the browser?
-6. What is the use of console.log(), and how can it help in debugging?
-7. Explain the purpose of try...catch in JavaScript.
-8. How do breakpoints help in debugging JavaScript code?
-9. What is the difference between throw and console.error()?
-10. Write a program that intentionally throws an error and catches it using try...catch.
-11. How can debugger be used in JavaScript?
-12. What is stack trace, and how can it help in debugging?
-13. What are some best practices for writing bug-free JavaScript code?
-
----
-
-4. Data Structures (Next 2 Weeks)
-
-## 1. Arrays
-
-### Simple
-
-1. Write a function to find the largest element in an array.
-2. Write a function to find the sum of all elements in an array.
-3. How do you check if an array contains a specific element?
-4. Write a function to count the occurrences of a specific element in an array.
-5. Implement a function to find the smallest number in an array.
-
-### Medium
-
-6. Write a function to reverse an array without using the built-in reverse() method.
-7. How do you merge two sorted arrays into one sorted array?
-8. Implement a function that rotates an array k times to the right.
-9. Write a function to find the second largest number in an array.
-10. Implement a function that finds the intersection of two arrays.
-
-### Hard
-
-11. How do you remove duplicates from an array efficiently?
-12. Write a function to find the missing number in an array of 1 to N.
-13. How do you check if two arrays are equal?
-14. Implement a function to find the subarray with the maximum sum (Kadane’s Algorithm).
-15. Write a function to rearrange an array such that even numbers appear before odd numbers.
-
----
-
-## 2. Strings
-
-### Simple
-
-1. Write a function to check if a string is a palindrome.
-2. How do you count the number of vowels in a string?
-3. Write a function to reverse a string.
-4. How do you remove spaces from a given string?
-5. Write a function to capitalize the first letter of each word in a string.
-
-### Medium
-
-6. How can you find the first non-repeating character in a string?
-7. Write a function to check if two strings are anagrams.
-8. Implement a function to compress a string using character counts ("aabcccccaaa" → "a2b1c5a3").
-9. How do you check if one string is a rotation of another string?
-10. Write a function to check if a string contains only unique characters.
-
-### Hard
-
-11. Implement a function to find the longest palindrome substring in a string.
-12. Write a function to find all permutations of a given string.
-13. Implement a function to count the number of occurrences of each character in a string.
-14. How do you check if a string follows a given pattern (e.g., "abba" follows "dog cat cat dog")?
-15. Implement a function to convert a given sentence into its abbreviation ("I am learning JavaScript" → "I a l J").
-
----
-
-## 3. Linked Lists
-
-### Simple
-
-1. What is a linked list, and how does it differ from an array?
-2. Implement a function to insert a node at the beginning of a linked list.
-3. How do you delete a node from a linked list?
-4. Write a function to traverse and print a linked list.
-5. Implement a function to find the length of a linked list.
-
-### Medium
-
-6. Write a function to find the middle node of a linked list.
-7. Implement a function to reverse a linked list.
-8. How do you detect a cycle in a linked list?
-9. Write a function to merge two sorted linked lists.
-10. How do you find the nth node from the end of a linked list?
-
-### Hard
-
-11. Implement a function to remove duplicates from a linked list.
-12. How do you check if two linked lists intersect?
-13. Write a function to find the starting point of a cycle in a linked list.
-14. Implement a function to group even and odd nodes together in a linked list.
-15. Write a function to add two numbers represented as linked lists.
-
----
-
-## 4. Stacks
-
-### Simple
-
-1. What is a stack, and how does it follow the LIFO principle?
-2. Implement a stack using an array in JavaScript.
-3. How do you implement a stack using a linked list?
-4. Explain the purpose of push() and pop() in a stack.
-5. Write a function to check if a given string has balanced parentheses.
-
-### Medium
-
-6. Implement a function to reverse a string using a stack.
-7. How do you implement a stack with two queues?
-8. Write a function to evaluate a postfix expression using a stack.
-9. Implement a function to find the minimum element in a stack in constant time.
-10. Write a function to sort a stack using recursion.
-
-### Hard
-
-11. How do you design a stack that supports push(), pop(), and getMin() in constant time?
-12. Implement an LRU (Least Recently Used) cache using a stack.
-13. How do you implement a stack using only one queue?
-14. Write a function to check if a given arithmetic expression is valid.
-15. Implement a function to convert an infix expression to postfix notation.
-
----
-
-## 5. Queues
-
-### Simple
-
-1. What is a queue, and how does it follow the FIFO principle?
-2. Implement a queue using an array in JavaScript.
-3. How do you implement a queue using a linked list?
-4. What is the difference between a queue and a stack?
-5. Write a function to check if a queue is empty.
-
-### Medium
-
-6. Implement a function to reverse a queue.
-7. How do you implement a queue using two stacks?
-8. Explain priority queues and their applications.
-9. Implement a circular queue and explain how it works.
-10. Implement a function to merge two queues in an alternating manner.
-
-### Hard
-
-11. How do you design a queue that supports enqueue(), dequeue(), and getMin() in constant time?
-12. Implement a function to find the first non-repeating character in a stream of characters using a queue.
-13. How do you implement a multi-level queue with different priorities?
-14. Write a function to simulate a printer queue with different priorities.
-15. Implement a function to process tasks in batches using a queue.
-
----
-
-## 6. Sorting Algorithms
-
-### Simple
-
-1. Implement the Bubble Sort algorithm.
-2. How does Selection Sort work? Implement it.
-3. Implement the Insertion Sort algorithm.
-4. Compare the time complexities of different sorting algorithms.
-5. Write a function to sort an array of numbers in descending order.
-
-### Medium
-
-6. Implement Merge Sort and explain its time complexity.
-7. Implement Quick Sort and explain how pivot selection affects performance.
-8. Write a function to perform Counting Sort.
-9. How can you sort an array of 0s, 1s, and 2s without extra space?
-10. Implement a function to find the Kth largest element in an array using sorting.
-
-### Hard
-
-11. Implement Heap Sort and explain its working.
-12. Write a function to sort an array using Radix Sort.
-13. How do you sort an array of strings based on their lengths?
-14. Implement Bucket Sort and explain its applications.
-15. Write a function to find the smallest missing positive integer using sorting.
-
----
-
-## 7. Searching Algorithms
-
-### Simple
-
-1. Implement Linear Search on an array.
-2. Implement Binary Search on a sorted array.
-3. What is the time complexity of Binary Search?
-4. Write a function to find the first occurrence of an element in a sorted array.
-5. Write a function to check if a given number exists in a matrix.
-
-### Medium
-
-6. Implement a function to find the peak element in an array.
-7. How does Interpolation Search work? Implement it.
-8. Write a function to search for a word in a 2D grid.
-9. Implement an algorithm to find the square root of a number using Binary Search.
-10. Implement Ternary Search and compare it with Binary Search.
-
-### Hard
-
-11. Write a function to find the smallest missing positive integer in an array.
-12. Implement Exponential Search and explain its use cases.
-13. Implement Jump Search and compare it with Binary Search.
-14. Implement a function to find duplicate elements in an array using a search method.
-15. How do you efficiently find the median of two sorted arrays?
-
-**
-
-```
-
-```
+## Data Structures (Next 2 Weeks)
+
+### Arrays
+
+| #   | Problem name                                                                                                                                                                        | Solution                                                                                                                                                   |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 066 | [Find Largest Element in Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/1_max.js)                         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/1_max.js)                |
+| 067 | [Sum of All Elements in Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/2_sum.js)                          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/2_sum.js)                |
+| 068 | [Check if Array Contains Element](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/3_includes.js)                  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/3_includes.js)           |
+| 069 | [Count Element Occurrences in Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/4_occurences.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/4_occurences.js)         |
+| 070 | [Find Smallest Number in Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/5_min.js)                         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/easy/5_min.js)                |
+| 071 | [Reverse Array Without Built-in Method](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/1_reverse.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/1_reverse.js)          |
+| 072 | [Merge Two Sorted Arrays](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/2_mergeSort.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/2_mergeSort.js)        |
+| 073 | [Rotate Array k Times Right](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/3_rotateArray.js)                  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/3_rotateArray.js)      |
+| 074 | [Find Second Largest Number](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/4_secondLargest.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/4_secondLargest.js)    |
+| 075 | [Find Intersection of Two Arrays](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/5_findIntersection.js)        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/medium/5_findIntersection.js) |
+| 076 | [Remove Duplicates from Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/1_removeDuplicate.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/1_removeDuplicate.js)    |
+| 077 | [Find Missing Number in 1 to N](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/2_findMissingNum.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/2_findMissingNum.js)     |
+| 078 | [Check if Two Arrays are Equal](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/3_arrayEquality.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/3_arrayEquality.js)      |
+| 079 | [Maximum Subarray Sum (Kadane&#39;s Algorithm)](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/4_maxSubArray.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/4_maxSubArray.js)        |
+| 080 | [Rearrange Even Before Odd](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/5_rearrange.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/arrays/hard/5_rearrange.js)          |
+
+### Strings
+
+| #   | Problem name                                                                                                                                                                     | Solution                                                                                                                                                   |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 081 | [Check if String is Palindrome](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/1_isPalindrome.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/1_isPalindrome.js)      |
+| 082 | [Count Vowels in String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/2_countVowels.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/2_countVowels.js)       |
+| 083 | [Reverse a String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/3_reverse.js)                              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/3_reverse.js)           |
+| 084 | [Remove Spaces from String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/4_removeSpaces.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/4_removeSpaces.js)      |
+| 085 | [Capitalize First Letter of Each Word](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/5_capitalize.js)       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/easy/5_capitalize.js)        |
+| 086 | [Find First Non-Repeating Character](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/1_uniqueCharater.js)   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/1_uniqueCharater.js)  |
+| 087 | [Check if Two Strings are Anagrams](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/2_anagram.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/2_anagram.js)         |
+| 088 | [Compress String with Character Count](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/3_compress.js)       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/3_compress.js)        |
+| 089 | [Check if String is Rotation of Another](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/4_rotateString.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/4_rotateString.js)    |
+| 090 | [Check if String Has Unique Characters](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/5_isUnique.js)      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/medium/5_isUnique.js)        |
+| 091 | [Find Longest Palindrome Substring](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/1_logestPalindromic.js)   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/1_logestPalindromic.js) |
+| 092 | [Find All Permutations of String](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/2_permutaions.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/2_permutaions.js)       |
+| 093 | [Count Character Occurrences](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/3_occurences.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/3_occurences.js)        |
+| 094 | [Check if String Follows Pattern](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/4_followPatter.js)          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/4_followPatter.js)      |
+| 095 | [Convert Sentence to Abbreviation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/5_abbreviate.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/strings/hard/5_abbreviate.js)        |
+
+### Linked Lists
+
+| #   | Problem name                                                                                                                                                                         | Solution                                                                                                                                                          |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 096 | [What is a linked list](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/easy/1_linkedList.md)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/easy/1_linkedList.md)          |
+| 097 | [Linked List Implementation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/easy/implemention.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/easy/implemention.js)          |
+| 098 | [Find Middle Node](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/1_findMiddleNode.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/1_findMiddleNode.js)    |
+| 099 | [Reverse Linked List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/2_reverseLinkedList.js)              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/2_reverseLinkedList.js) |
+| 100 | [Detect Cycle in Linked List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/3_isCycle.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/3_isCycle.js)           |
+| 101 | [Merge Two Sorted Linked Lists](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/4_merge.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/4_merge.js)             |
+| 102 | [Find nth Node from End](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/5_findNthOfEnd.js)                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/medium/5_findNthOfEnd.js)      |
+| 103 | [Remove Duplicates from Linked List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/1_removeDuplicates.js)  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/1_removeDuplicates.js)    |
+| 104 | [Check if Two Linked Lists Intersect](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/2_findIntersection.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/2_findIntersection.js)    |
+| 105 | [Find Cycle Start](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/3_detectCycleStart.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/3_detectCycleStart.js)    |
+| 106 | [Group Even and Odd Nodes](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/4_groupEvenOddNodes.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/4_groupEvenOddNodes.js)   |
+| 107 | [Add Two Numbers as Linked Lists](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/5_addTwoNumbers.js)        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/linked-lists/hard/5_addTwoNumbers.js)       |
+
+### Stacks
+
+| #   | Problem name                                                                                                                                                                        | Solution                                                                                                                                                          |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 108 | [What is a Stack](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/1_stack.md)                                      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/1_stack.md)                      |
+| 109 | [Stack Using Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/2_stackUsingArray.js)                          | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/2_stackUsingArray.js)            |
+| 110 | [Stack Using Linked List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/3_stackUsingLinkedList.js)               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/3_stackUsingLinkedList.js)       |
+| 111 | [Stack Operations](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/4_stackOperations.md)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/easy/4_stackOperations.md)            |
+| 112 | [Check Balanced Parentheses](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-Mahmoodhashemi/tree/main/02_data-structures/stack/easy/5_balanceString.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-Mahmoodhashemi/tree/main/02_data-structures/stack/easy/5_balanceString.js)              |
+| 113 | [Reverse String Using Stack](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/1_reverseString.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/1_reverseString.js)            |
+| 114 | [Stack Implementation with Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/2_stackImplementationQueue.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/2_stackImplementationQueue.js) |
+| 115 | [Postfix Evaluation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/3_postfix.js)                               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/3_postfix.js)                  |
+| 116 | [Find Minimum in Stack](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/4_stackMin.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/4_stackMin.js)                 |
+| 117 | [Sort Stack](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/5_sortStack.js)                                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/medium/5_sortStack.js)                |
+| 118 | [Design Stack with Min](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/1_lruCache.js)                             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/1_lruCache.js)                   |
+| 119 | [LRU Cache](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/2_stackUsingQueue.js)                                  | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/2_stackUsingQueue.js)            |
+| 120 | [Valid Expression Check](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/3_isValidExpression.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/3_isValidExpression.js)          |
+| 121 | [Infix to Postfix Conversion](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/4_infixToPostfix.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/4_infixToPostfix.js)             |
+| 122 | [Infix to Postfix Conversion](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/5_infixToPostfix.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/stack/hard/5_infixToPostfix.js)             |
+
+### Queues
+
+| #   | Problem name                                                                                                                                                                | Solution                                                                                                                                                       |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 123 | [What is a Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/1_queue.md)                              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/1_queue.md)                   |
+| 124 | [Queue Using Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/2_arrayQueue.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/2_arrayQueue.js)              |
+| 125 | [Queue Using Linked List](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/3_linkedListQueue.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/3_linkedListQueue.js)         |
+| 126 | [Queue vs Stack](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/4_queueVsStack.md)                        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/easy/4_queueVsStack.md)            |
+| 127 | [Reverse Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/1_reverseQueue.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/1_reverseQueue.js)          |
+| 128 | [Queue Using Two Stacks](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/2_queueUsingStack.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/2_queueUsingStack.js)       |
+| 129 | [Priority Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/3_priorityQueue.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/3_priorityQueue.js)         |
+| 130 | [Circular Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/4_circularQueue.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/4_circularQueue.js)         |
+| 131 | [Merge Two Queues](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/5_mergeQueues.js)                     | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/medium/5_mergeQueues.js)           |
+| 132 | [Min Queue Design](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/1_minQueues.js)                         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/1_minQueues.js)               |
+| 133 | [First Unique Character](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/2_firstUnique.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/2_firstUnique.js)             |
+| 134 | [Multi-Level Priority Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/3_multiLevelPriorityQueue.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/3_multiLevelPriorityQueue.js) |
+| 135 | [Printer Queue Simulation](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/4_printSimulation.js)           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/4_printSimulation.js)         |
+| 136 | [Batch Processing Queue](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/5_batch.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/02_data-structures/queue/hard/5_batch.js)                   |
+
+## Algorithms
+
+### Sorting Algorithms
+
+| #   | Problem name                                                                                                                                                   | Solution                                                                                                                                           |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 137 | [Bubble Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/bubbleSort.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/bubbleSort.js)              |
+| 138 | [Selection Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/selectionSort.js)                      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/selectionSort.js)           |
+| 139 | [Insertion Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/insertionSort.js)                      | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/insertionSort.js)           |
+| 140 | [Merge Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/mergeSort.js)                              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/mergeSort.js)               |
+| 141 | [Quick Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/quickSort.js)                              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/quickSort.js)               |
+| 142 | [Counting Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/countingSort.js)                        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/countingSort.js)            |
+| 143 | [Heap Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/heapSort.js)                                | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/heapSort.js)                |
+| 144 | [Radix Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/radixSort.js)                              | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/radixSort.js)               |
+| 145 | [Bucket Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/bucketSort.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/bucketSort.js)              |
+| 146 | [Descending Sort](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/descendingSort.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/descendingSort.js)          |
+| 147 | [Find Kth Largest](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/findKthLargest.js)                   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/findKthLargest.js)          |
+| 148 | [Sort Colors](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/sortColors.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/sortColors.js)              |
+| 149 | [Sort Strings Array](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/sortStringsArr.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/sortStringsArr.js)          |
+| 150 | [Smallest Missing Positive](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/smallestMissingPositive.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/smallestMissingPositive.js) |
+| 151 | [Sorting Visualizations](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/visualizations.md)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/sorts/visualizations.md)          |
+
+### Searching Algorithms
+
+| #   | Problem name                                                                                                                                                           | Solution                                                                                                                                                |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 152 | [Linear Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)            |
+| 153 | [Binary Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/binarySearch.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/binarySearch.js)            |
+| 154 | [Find First Occurrence](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findFirstOccurrence.js)            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findFirstOccurrence.js)     |
+| 155 | [Search in Matrix](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/searchMatrix.js)                        | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/searchMatrix.js)            |
+| 156 | [Find Peak Element](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findPeakElement.js)                    | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findPeakElement.js)         |
+| 157 | [Interpolation Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/interpolationSearch.js)             | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/interpolationSearch.js)     |
+| 158 | [Word Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/wordSearch.js)                               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/wordSearch.js)              |
+| 159 | [Find Square Root](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findSqrt.js)                            | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findSqrt.js)                |
+| 160 | [Ternary Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/ternarySearch.js)                         | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/ternarySearch.js)           |
+| 170 | [Find Smallest Missing Positive](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findMissingPositive.js)   | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findMissingPositive.js)     |
+| 171 | [Exponential Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/exponentialSearch.js)                 | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/exponentialSearch.js)       |
+| 172 | [Jump Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/jumpSearch.js)                               | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/jumpSearch.js)              |
+| 173 | [Find Duplicates](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findDuplicates.js)                       | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findDuplicates.js)          |
+| 174 | [Find Median of Sorted Arrays](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findeMedianSortedArrays.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findeMedianSortedArrays.js) |
+| 175 | [Linear Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)            |
+
+## What I Learned (Summary)
+
+- Strengthened my understanding of core **JavaScript concepts** (variables, scopes, closures, hoisting, arrow functions, etc.)
+- Practiced fundamental **data structures** such as arrays, strings, stacks, and queues
+- Improved my **problem solving skills** by working through algorithmic challenges every day
+- Learned how to break down problems into smaller steps and write efficient solutions
