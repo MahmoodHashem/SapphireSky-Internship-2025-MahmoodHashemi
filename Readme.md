@@ -1,4 +1,4 @@
-# Internship Program - Skyteamsrogramming Basics
+# Internship Program - Skyteams 
 
 **Programming Basics, Algorithms & Data Structures**
 
@@ -236,7 +236,7 @@ This repository includes all the practice problems, solutions and notes I worked
 | 174 | [Find Median of Sorted Arrays](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findeMedianSortedArrays.js) | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/findeMedianSortedArrays.js) |
 | 175 | [Linear Search](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)                           | [View Solution](https://github.com/MahmoodHashem/SapphireSky-Internship-2025-MahmoodHashemi/tree/main/03_algorithms/searchings/linearSearch.js)            |
 
-## What I Learned (Summary)
+## What I Learned 
 
 - Strengthened my understanding of core **JavaScript concepts** (variables, scopes, closures, hoisting, arrow functions, etc.)
 - Practiced fundamental **data structures** such as arrays, strings, stacks, and queues
